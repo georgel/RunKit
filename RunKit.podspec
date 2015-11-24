@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'RunKit'
-  s.version      = '1.0.1'
+  s.version      = '1.0.2'
   s.summary      = 'A Swift Wrapper for Grand Central Dispatch (GCD) Framework that supports method chaining'
   s.homepage     = 'https://github.com/khoiln/RunKit.git'
   s.license      = { :type => 'MIT' }
