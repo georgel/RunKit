@@ -1,9 +1,9 @@
 # RunKit
-[![CocoaPods compatible](https://img.shields.io/cocoapods/v/Run.svg)](https://cocoapods.org/pods/RunKit) 
+[![CocoaPods compatible](https://img.shields.io/cocoapods/v/RunKit.svg)](https://cocoapods.org/pods/RunKit) 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg)](https://github.com/Carthage/Carthage)
-[![](http://img.shields.io/badge/Swift-2.1-blue.svg)]() 
-[![](https://img.shields.io/cocoapods/p/RunKit.svg?style=flat)]() 
-[![](https://img.shields.io/dub/l/vibe-d.svg)]()
+[![](http://img.shields.io/badge/Swift-2.1-blue.svg)](https://developer.apple.com/swift/) 
+[![](https://img.shields.io/cocoapods/p/RunKit.svg?style=flat)](https://cocoapods.org/pods/RunKit) 
+[![](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/khoiln/RunKit/blob/master/LICENSE)
 
 A Swift Wrapper for Grand Central Dispatch (GCD) Framework that supports method chaining.
 
