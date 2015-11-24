@@ -1,5 +1,5 @@
 # RunKit
-[![CocoaPods compatible](https://img.shields.io/cocoapods/v/Run.svg)](https://cocoapods.org/pods/RunKit) 
+[![CocoaPods compatible](https://img.shields.io/cocoapods/v/RunKit.svg)](https://cocoapods.org/pods/RunKit) 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg)](https://github.com/Carthage/Carthage)
 [![](http://img.shields.io/badge/Swift-2.1-blue.svg)]() 
 [![](https://img.shields.io/cocoapods/p/RunKit.svg?style=flat)]() 
