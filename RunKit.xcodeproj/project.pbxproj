@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		19AED0541C044318005812AF /* RunKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19AED0491C044318005812AF /* RunKit.framework */; };
 		19AED0591C044318005812AF /* RunKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AED0581C044318005812AF /* RunKitTests.swift */; };
-		19AED0661C044330005812AF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19AED0641C044330005812AF /* Info.plist */; };
 		19AED0671C044330005812AF /* RunKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 19AED0651C044330005812AF /* RunKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		19AED0691C0443FA005812AF /* RunKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AED0681C0443FA005812AF /* RunKit.swift */; };
 		19AED0861C04454A005812AF /* RunKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 19AED0651C044330005812AF /* RunKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -221,7 +220,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19AED0661C044330005812AF /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
