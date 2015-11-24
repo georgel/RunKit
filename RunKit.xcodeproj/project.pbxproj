@@ -15,6 +15,8 @@
 		19E3C1951C0458A800F2A206 /* RunKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AED0681C0443FA005812AF /* RunKit.swift */; };
 		19E3C1961C0458A800F2A206 /* RunKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AED0681C0443FA005812AF /* RunKit.swift */; };
 		19E3C1971C0458AE00F2A206 /* RunKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 19AED0651C044330005812AF /* RunKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19E3C1A71C045CC100F2A206 /* RunKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 19AED0651C044330005812AF /* RunKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19E3C1A81C045CC600F2A206 /* RunKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AED0681C0443FA005812AF /* RunKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,7 @@
 		19AED06F1C044516005812AF /* RunKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RunKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19E3C18D1C04588000F2A206 /* RunKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RunKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19E3C1981C045B2500F2A206 /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+		19E3C19F1C045C6100F2A206 /* RunKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RunKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		19E3C19B1C045C6100F2A206 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -89,6 +99,7 @@
 				19AED0531C044318005812AF /* RunKitTests iOS.xctest */,
 				19AED06F1C044516005812AF /* RunKit.framework */,
 				19E3C18D1C04588000F2A206 /* RunKit.framework */,
+				19E3C19F1C045C6100F2A206 /* RunKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +148,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				19E3C1971C0458AE00F2A206 /* RunKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19E3C19C1C045C6100F2A206 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19E3C1A71C045CC100F2A206 /* RunKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +234,24 @@
 			productReference = 19E3C18D1C04588000F2A206 /* RunKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		19E3C19E1C045C6100F2A206 /* RunKit watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19E3C1A41C045C6100F2A206 /* Build configuration list for PBXNativeTarget "RunKit watchOS" */;
+			buildPhases = (
+				19E3C19A1C045C6100F2A206 /* Sources */,
+				19E3C19B1C045C6100F2A206 /* Frameworks */,
+				19E3C19C1C045C6100F2A206 /* Headers */,
+				19E3C19D1C045C6100F2A206 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RunKit watchOS";
+			productName = "RunKit watchOS";
+			productReference = 19E3C19F1C045C6100F2A206 /* RunKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -237,6 +274,9 @@
 					19E3C18C1C04588000F2A206 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
+					19E3C19E1C045C6100F2A206 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
 				};
 			};
 			buildConfigurationList = 19AED0431C044318005812AF /* Build configuration list for PBXProject "RunKit" */;
@@ -252,9 +292,10 @@
 			projectRoot = "";
 			targets = (
 				19AED0481C044318005812AF /* RunKit iOS */,
-				19AED0521C044318005812AF /* RunKitTests iOS */,
 				19AED06E1C044516005812AF /* RunKit OSX */,
 				19E3C18C1C04588000F2A206 /* RunKit tvOS */,
+				19E3C19E1C045C6100F2A206 /* RunKit watchOS */,
+				19AED0521C044318005812AF /* RunKitTests iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -282,6 +323,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		19E3C18B1C04588000F2A206 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19E3C19D1C045C6100F2A206 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -320,6 +368,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				19E3C1961C0458A800F2A206 /* RunKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19E3C19A1C045C6100F2A206 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19E3C1A81C045CC600F2A206 /* RunKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +614,46 @@
 			};
 			name = Release;
 		};
+		19E3C1A51C045C6100F2A206 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tv.khoi.RunKit;
+				PRODUCT_NAME = RunKit;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		19E3C1A61C045C6100F2A206 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tv.khoi.RunKit;
+				PRODUCT_NAME = RunKit;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -602,6 +698,15 @@
 			buildConfigurations = (
 				19E3C1921C04588000F2A206 /* Debug */,
 				19E3C1931C04588000F2A206 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19E3C1A41C045C6100F2A206 /* Build configuration list for PBXNativeTarget "RunKit watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19E3C1A51C045C6100F2A206 /* Debug */,
+				19E3C1A61C045C6100F2A206 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
