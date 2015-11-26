@@ -5,7 +5,9 @@
 [![](https://img.shields.io/cocoapods/p/RunKit.svg?style=flat)](https://cocoapods.org/pods/RunKit) 
 [![](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/khoiln/RunKit/blob/master/LICENSE)
 
-A Swift Wrapper for Grand Central Dispatch (GCD) Framework that supports method chaining.
+A Swift Wrapper for Grand Central Dispatch (GCD) Framework that supports method chaining. 
+
+This project is heavily based on [Async](https://github.com/duemunk/Async/) by Tobias Due Munk. I've created this for internal projects since Async keyword is being used in our other framework. 
 
 Tired of this?
 ```swift
