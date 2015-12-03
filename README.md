@@ -84,5 +84,3 @@ print("Continue..")
 ## License
 RunKit is released under the MIT license. See [LICENSE](https://github.com/khoiln/RunKit/blob/master/LICENSE) for details.
 
-## Disclaimer
-This project is heavily based on [Async](https://github.com/duemunk/Async/) by Tobias Due Munk. I've created this for internal projects since Async keyword is being used in our other framework. 
