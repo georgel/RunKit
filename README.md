@@ -20,11 +20,11 @@ dispatch_async(dispatch_get_global_queue(QOS_CLASS_BACKGROUND, 0)) { () -> Void 
 ```
 With RunKit
 ```swift
-Run.background { () -> Void in
+Run.background { 
     for index in 1...UInt64.max{
         print(index)
     }
-}.main { () -> Void in
+}.main { 
     print("Back to main thread")
 }
 ```
@@ -50,13 +50,13 @@ Run.background {}
 ```
 Queues Chaining:
 ```swift
-Run.main { () -> Void in
+Run.main { 
     print("main queue")
-}.background { () -> Void in
+}.background { 
     print("background queue")
-}.userInitiated { () -> Void in
+}.userInitiated {
     print("userInitiated queue")
-}.main { () -> Void in
+}.main { 
     print("Back to main thread")
 }
 ```
