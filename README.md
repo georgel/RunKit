@@ -32,7 +32,7 @@ Run.background {
 ### Cocoapods
 Add this to your Podfile
 ```ruby
-pod 'RunKit'
+pod 'RunKit', '~> 1.0'
 ```
 ### Carthage
 Add this to your Cartfile
