@@ -87,7 +87,7 @@ private extension Run {
         }
         let newChainingWrapperBlock = dispatch_block_create(DISPATCH_BLOCK_INHERIT_QOS_CLASS, chainingWrapperBlock)
         dispatch_block_notify(_block, queue, newChainingWrapperBlock)
-        return Run(newChainingWrapperBlock)
+        return Run(chainingBlock)
     }
     func chainNow(block chainingBlock: dispatch_block_t, queue: dispatch_queue_t) -> Run{
         let newChainingBlock = dispatch_block_create(DISPATCH_BLOCK_INHERIT_QOS_CLASS, chainingBlock)
