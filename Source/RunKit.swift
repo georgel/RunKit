@@ -69,6 +69,9 @@ public extension Run {
     static func background(after seconds: Double? = nil, block: dispatch_block_t) -> Run{
         return execute(seconds: seconds, block: block, queue: Queue.background())
     }
+    static func custom(after seconds: Double? = nil, queue: dispatch_queue_t, block: dispatch_block_t) -> Run{
+        return execute(seconds: seconds, block: block, queue: queue)
+    }
 }
 
 //MARK: Instance methods
@@ -81,9 +84,10 @@ private extension Run {
     }
     func chainAfter(seconds seconds: Double, block: dispatch_block_t, queue: dispatch_queue_t) -> Run{
         let chainingBlock = dispatch_block_create(DISPATCH_BLOCK_INHERIT_QOS_CLASS, block)
-        let chainingWrapperBlock = {
+        let chainingWrapperBlock: dispatch_block_t = {
             let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(seconds * Double(NSEC_PER_SEC)))
             dispatch_after(delayTime, queue, chainingBlock)
+            
         }
         let newChainingWrapperBlock = dispatch_block_create(DISPATCH_BLOCK_INHERIT_QOS_CLASS, chainingWrapperBlock)
         dispatch_block_notify(_block, queue, newChainingWrapperBlock)
@@ -110,6 +114,9 @@ public extension Run{
     }
     func background(after seconds: Double? = nil, block: dispatch_block_t) -> Run{
         return self.chain(seconds: seconds, block: block, queue: Queue.background())
+    }
+    func custom(after seconds: Double? = nil, queue:dispatch_queue_t, block: dispatch_block_t) -> Run{
+        return self.chain(seconds: seconds, block: block, queue: queue)
     }
     func cancel(){
         dispatch_block_cancel(_block)

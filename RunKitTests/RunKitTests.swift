@@ -66,6 +66,18 @@ class RunKitTests: XCTestCase {
         }
         waitForExpectationsWithTimeout(1, handler: nil)
     }
+    
+    func testCustomQueue(){
+        let expectation = expectationWithDescription("Expected Running in Custom Serial Queue")
+        let queue = dispatch_queue_create("queue1", DISPATCH_QUEUE_SERIAL)
+        Run.custom(queue: queue) { () -> Void in
+            let currentClass = qos_class_self()
+            let isValidClass = currentClass == qos_class_main() || currentClass == QOS_CLASS_USER_INITIATED
+            XCTAssert(isValidClass, "On \(qos_class_self().description) (expected \(qos_class_main().description) || \(QOS_CLASS_USER_INITIATED.description))")
+            expectation.fulfill()
+        }
+        waitForExpectationsWithTimeout(1, handler: nil)
+    }
     func testChaining(){
         let expectation = expectationWithDescription("Test chaining queue")
         var count = 0
