@@ -60,8 +60,15 @@ Run.main {
     print("Back to main thread")
 }
 ```
-Store blocks reference for chaining
+Using Custom Queue:
+```swift
+let queue = dispatch_queue_create("queue1", DISPATCH_QUEUE_SERIAL)
+Run.custom(queue: queue){
+    print("User created Queue")
+}
 ```
+Store blocks reference for chaining
+```swift
 let longRunningBlock = Run.background{
     for index in 1...UInt64.max{
         print(index)
